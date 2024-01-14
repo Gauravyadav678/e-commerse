@@ -12,7 +12,7 @@ const Navbar = () => {
   
     useEffect(() => {
       setIsLoggedIn(!!(location.state && location.state.id));
-      console.log("navbar ka logout hai")
+     
     }, [location.state]);
      
     const handleLogout = () => {

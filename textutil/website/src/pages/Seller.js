@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Navbar  } from "../components";
 
 const Seller = () => {
-
+  <Navbar/>
   const [categories, setCategories] = useState([]);
   const [newItem, setNewItem] = useState({
     Category_display_name: '',
@@ -59,9 +60,9 @@ const Seller = () => {
         <label>Select Category Display Name:</label>
         <select name="Category_display_name" value={newItem.Category_display_name} onChange={handleInputChange}>
           <option value="">Select Category</option>
-          <option value="Electronics">Electronics</option>
-          <option value="Footwear">Footwear</option>
-          <option value="Clothes">Clothes</option>
+          <option value="electronics">Electronics</option>
+          <option value="footwear">Footwear</option>
+          <option value="apparel">Apparel</option>
         </select>
       </div>
       <div>

@@ -67,7 +67,7 @@ const Products = () => {
   };
 
   const filterProduct = (cat) => {
-    const updatedList = data.filter((item) => item.category === cat);
+    const updatedList = data.filter((item) => item.Category_display_name=== cat);
     setFilter(updatedList);
   }
   const ShowProducts = () => {
@@ -76,8 +76,8 @@ const Products = () => {
         <div className="buttons text-center py-5">
           <button className="btn btn-outline-dark btn-sm m-2" onClick={() => setFilter(data)}>All</button>
           <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("electronics")}>Electronics</button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("men's clothing")}>Apparel</button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("jewelery")}>Footwear</button>
+          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("apparel")}>Apparel</button>
+          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("footwear")}>Footwear</button>
          
         </div>
 
